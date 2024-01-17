@@ -6,8 +6,7 @@ from constant import local_host, core_books, query
 if __name__ == '__main__':
     connection = urlopen(local_host+core_books+query)
     response = connection.read()
-    # Decode UTF-8 bytes to Unicode, and convert single quotes
-    # to double quotes to make it valid JSON
+
     data = json.loads(response.decode('utf-8'))
     '''
     for key, value in data.items():
