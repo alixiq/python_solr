@@ -1,1 +1,1 @@
-Simple python project to get the document data form Apache Solr
+Simple python project get the document data form Apache Solr
